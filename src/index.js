@@ -1,17 +1,24 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import App from './App'
+// import './styles/index.css'
 
-import App from './App'
+const link = React.createElement('a', { href: 'reactjs.org' }, 'Ссылочка');
+ReactDOM.render(link, document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
 
-import './styles/index.css'
+// const rootView = document.getElementById('root')
 
-const rootView = document.getElementById('root')
-
-if (rootView) {
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    rootView
-  )
-}
+// if (rootView) {
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       <App />
+//     </React.StrictMode>,
+//     rootView
+//   )
+// }
